@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商場頁面</title>
+    <link rel="stylesheet" href="../assets/css/member_data.css">
+    
+</head>
+<body>
+    <header class="header">
+        <!-- 大標題改為圖片 -->
+        <a href="../index.html"><img src="../assets/images/title-image.svg" alt="中職商品" class="title-image"></a>
+        
+        <!-- 導航列 -->
+        <nav class="navbar">
+            <a href="aboutus.html" class="about-link">關於我們</a>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/brothers_section.html">中信兄弟系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/rakuten_section.html">樂天桃猿系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/lion_section.html">統一獅系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/fuben_section.html">富邦悍將系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/dragon_section.html">味全龍系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/sectionHTML/wings_section.html">台鋼雄鷹系列</a>
+                </li>
+            </ul>
+            <!-- 會員和購物車 -->
+            <div class="nav-icons">
+                <a href="member.html" class="icon">會員登入</a>
+                <a href="memberdata.html" class="icon">會員資料</a>
+                <a href="car.html" class="icon">購物車</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>會員資料</h2>
+            <div class="member-info">
+                <p>使用者名稱：資管二甲學生</p>
+                <p>信箱：112441@gmail.com</p>
+                <p>電話：0900-000000</p>
+                <p>地址：中原資管樓</p>
+            </div>
+
+            <div class="update-form">
+                <h3>修改資料</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="username">帳號：</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密碼：</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <button type="submit">修改</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="history-section">
+            <h2>歷史購物紀錄</h2>
+            <ul id="historyList"></ul>
+            <div class="order">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>商品圖片</th>
+                            <th>商品名稱</th>
+                            <th>商品單價</th>
+                            <th>數量</th>
+                            <th>小計</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img src="../assets/images/products/fubon/fubon_image1.jpg" alt="產品圖片">
+                                </div>
+                            </td>
+                            <td>富邦悍將球衣</td>
+                            <td>$1500</td>
+                            <td>1</td>
+                            <td>NT$1500</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img src="../assets/images/products/lion/lion_image1.jpg" alt="產品圖片" >
+                                </div>
+                            </td>
+                            <td>統一獅球衣</td>
+                            <td>$1500</td>
+                            <td>2</td>
+                            <td>NT$3000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">總計：</td>
+                            <td>$4500</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 顧客回饋 -->
+            <div class="feedback-section">
+                <h3>顧客回饋</h3>
+                <form id="feedbackForm" action="#" method="POST">
+                    <textarea name="feedback" rows="4" placeholder="請留下您的建議或意見"></textarea>
+                    <button type="submit">提交回饋</button>
+                </form>
+                <p id="feedbackMessage" style="display: none; color: #4CAF50; margin-top: 10px;">
+                    感謝您的回饋！
+                </p>
+            </div>
+    
+            <!-- 聯絡方式 -->
+            <div class="contact-section">
+                <h3>聯絡方式</h3>
+                <p>地址：中原資管樓</p>
+                <p>電話：123 456 789</p>
+                <p>電子郵件：cyim@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/feedback.js"></script>
+    <script src="product_script.js"></script>
+</body>
+</html>

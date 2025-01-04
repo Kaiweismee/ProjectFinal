@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="../assets/css/aboutus_style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- 標題圖片 -->
+        <a href="../index.html"><img src="../assets/images/title-image.svg" alt="中職商品" class="title-image"></a>
+
+        <!-- 導航列 -->
+        <nav class="navbar">
+            <a href="aboutus.html" class="about-link">關於我們</a>
+            <ul class="nav-list">
+                <li><a href="../pages/sectionHTML/brothers_section.html">中信兄弟系列</a></li>
+                <li><a href="../pages/sectionHTML/rakuten_section.html">樂天桃猿系列</a></li>
+                <li><a href="../pages/sectionHTML/lion_section.html">統一獅系列</a></li>
+                <li><a href="../pages/sectionHTML/fuben_section.html">富邦悍將系列</a></li>
+                <li><a href="../pages/sectionHTML/dragon_section.html">味全龍系列</a></li>
+                <li><a href="../pages/sectionHTML/wings_section.html">台鋼雄鷹系列</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="member.html" class="icon">會員登入</a>
+                <a href="memberdata.html" class="icon">會員資料</a>
+                <a href="car.html" class="icon">購物車</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="team-section">
+        <h1 class="page-title">關於我們</h1>
+        <div class="team-container">
+            <!-- 卡片 1 -->
+            <div class="team-member">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="../assets/images/aboutus/brother_bighead.png" alt="成員 1">
+                        <p>陳凱威</p>
+                    </div>
+                    <div class="card-back">
+                        <p>在學習前端開發的過程中，我發現最大的挑戰之一就是排版和美感的問題。雖然基本的 HTML 和 CSS 語法不算太複雜，但如何擺放得符合邏輯，又好看，是一門值得加以學習的課程。經由這一次期末專案，讓我學習到了與隊員們溝通的重要性，才能讓我們的專題事半功倍。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 2 -->
+            <div class="team-member">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="../assets/images/aboutus/wings_bighead.jpg" alt="成員 2">
+                        <p>奉聖勳</p>
+                    </div>
+                    <div class="card-back">
+                        <p>課程學習並製作期末專案時，理解原本都很基礎的語法但要將它統整時卻很有挑戰性，時不時會有跑版或者少了內容的狀況，要組員一起討論並解決困難。而在過程中也理解團隊合作的重要性將事情分配好、效率提升，透過這次的期末專案，讓我對HTML跟CSS的內容學到了更多內容，增加了自己的基礎能力。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 3 -->
+            <div class="team-member">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="../assets/images/aboutus/rakuten_bighead.png" alt="成員 3">
+                        <p>李立威</p>
+                    </div>
+                    <div class="card-back">
+                        <p>設計與開發電商網站的過程讓我學到了許多寶貴的知識與技能。從初期的需求分析到網站架構設計，每一步都需要仔細規劃，每一個元素的擺放都需要考量到使用者的瀏覽習慣和操作便利性。購物車是我覺得最困難的點，不僅要讓消費者能調整商品數量，也要設置多元支付，使消費者可以選擇他們想如何支付。
+                            這次的前端開發經驗讓我深刻認識到細節的重要性，像是按鈕的顏色、字體的選擇，還有如何讓消費者輕鬆瀏覽都很重要。雖然我現在還不能做的跟其他專業電商平台一樣厲害，但這對我未來的前端開發有著重要的幫助。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 顧客回饋 -->
+            <div class="feedback-section">
+                <h3>顧客回饋</h3>
+                <form id="feedbackForm" action="#" method="POST">
+                    <textarea name="feedback" rows="4" placeholder="請留下您的建議或意見"></textarea>
+                    <button type="submit">提交回饋</button>
+                </form>
+                <p id="feedbackMessage" style="display: none; color: #4CAF50; margin-top: 10px;">
+                    感謝您的回饋！
+                </p>
+            </div>
+    
+            <!-- 聯絡方式 -->
+            <div class="contact-section">
+                <h3>聯絡方式</h3>
+                <p>地址：中原資管樓</p>
+                <p>電話：123 456 789</p>
+                <p>電子郵件：cyim@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/feedback.js"></script>
+</body>
+</html>
