@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+<body>
+    <header class="header">
+        <!-- 大標題改為圖片 -->
+        <a href="index.html"><img src="assets/images/title-image.svg" alt="中職商品" class="title-image"></a>
+    
+        <!-- 導航列 -->
+        <nav class="navbar">
+            <!-- 新增「關於我們」連結 -->
+            <a href="pages/aboutus.html" class="about-link">關於我們</a>
+    
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/brothers_section.html">中信兄弟系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/rakuten_section.html">樂天桃猿系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/lion_section.html">統一獅系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/fuben_section.html">富邦悍將系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/dragon_section.html">味全龍系列</a>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/sectionHTML/wings_section.html">台鋼雄鷹系列</a>
+                </li>
+            </ul>
+    
+            <!-- 會員和購物車 -->
+            <div class="nav-icons">
+                <a href="pages/member.html" class="icon">會員登入</a>
+                <a href="pages/memberdata.html" class="icon">會員資料</a>
+                <a href="pages/car.html" class="icon">購物車</a>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <!-- 自動切換大圖 -->
+    <section class="slider">
+        <div class="slides">
+            <a href="pages/sectionHTML/brothers_section.html">
+                <img src="assets/images/slides/image1.jpg" alt="商品1">
+            </a>
+            <a href="pages/sectionHTML/rakuten_section.html">
+                <img src="assets/images/slides/image2.jpg" alt="商品2">
+            </a>
+            <a href="pages/sectionHTML/lion_section.html">
+                <img src="assets/images/slides/image3.jpg" alt="商品3">
+            </a>
+            <a href="pages/sectionHTML/fuben_section.html">
+                <img src="assets/images/slides/image4.jpg" alt="商品4">
+            </a>
+            <a href="pages/sectionHTML/dragon_section.html">
+                <img src="assets/images/slides/image5.jpg" alt="商品5">
+            </a>
+            <a href="pages/sectionHTML/wings_section.html">
+                <img src="assets/images/slides/image6.jpg" alt="商品6">
+            </a>
+        </div>
+    </section>
+
+    <section class="site-introduction">
+        <div class="product-item intro-item">
+            <h2 class="intro-title">網頁介紹</h2>
+            <p>歡迎來到中職商品網站！我們專門提供中華職棒各球隊的精選商品，包括球衣、配件等。</p>
+            <p>無論您支持哪支球隊，都能在這裡找到適合的商品。期待您的選購與支持！</p>
+        </div>
+    </section>
+
+    <section class="hot-products">
+        <h2 class="section-title">熱門商品</h2>
+        <div class="products-grid">
+            <!-- 商品方塊 -->
+            <div class="product-item">
+                <a href="pages/productHTML/brothers/product_brothers1.jsp?id=1"><img src="assets/images/products/brothers/brothers_image1.jpg" alt="商品 1"></a>
+                <p>中信兄弟球衣</p>
+            </div>
+            <div class="product-item">
+                <a href="pages/productHTML/rakutens/product_rakuten1.html"><img src="assets/images/products/rakuten/rakuten_image1.jpg" alt="商品 2"></a>
+                <p>樂天桃猿球衣</p>
+            </div>
+            <div class="product-item">
+                <a href="pages/productHTML/lions/proudct_lion1.html"><img src="assets/images/products/lion/lion_image1.jpg" alt="商品 3"></a>
+                <p>統一獅球衣</p>
+            </div>
+            <div class="product-item">
+                <a href="pages/productHTML/fubens/product_fuben1.html"><img src="assets/images/products/fubon/fubon_image1.jpg" alt="商品 4"></a>
+                <p>富邦悍將球衣</p>
+            </div>
+            <div class="product-item">
+                <a href="pages/productHTML/dragons/product_dragon1.html"><img src="assets/images/products/dragon/dragon_image1.jpg" alt="商品 5"></a>
+                <p>味全龍球衣</p>
+            </div>
+            <div class="product-item">
+                <a href="pages/productHTML/wings/product_wings1.html"><img src="assets/images/products/wings/wings_image1.jpg" alt="商品 6"></a>
+                <p>台鋼雄鷹球衣</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 顧客回饋 -->
+            <div class="feedback-section">
+                <h3>顧客回饋</h3>
+                <form id="feedbackForm" action="#" method="POST">
+                    <textarea name="feedback" rows="4" placeholder="請留下您的建議或意見"></textarea>
+                    <button type="submit">提交回饋</button>
+                </form>
+                <p id="feedbackMessage" style="display: none; color: #4CAF50; margin-top: 10px;">
+                    感謝您的回饋！
+                </p>
+            </div>
+    
+            <!-- 聯絡方式 -->
+            <div class="contact-section">
+                <h3>聯絡方式</h3>
+                <p>地址：中原資管樓</p>
+                <p>電話：123 456 789</p>
+                <p>電子郵件：cyim@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/slides.js"></script>
+    <script src="assets/js/feedback.js"></script>
+</body>
+</html>
