@@ -1,0 +1,182 @@
+/* auth.css：註冊 / 登入共用樣式 */
+
+/* 背景與全域字型，可視情況保留或刪除，避免跟原本 style.css 衝突 */
+body {
+    background: #0b1020;
+    color: #f5f5f5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  
+  /* 整體頁面高度與排版 */
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 置中卡片區塊 */
+  .register-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 16px 40px;
+  }
+  
+  /* 卡片外觀（登入也可以用同一個 class） */
+  .register-card {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    backdrop-filter: blur(16px);
+  }
+  
+  /* 標題與副標 */
+  .register-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  
+  .register-sub {
+    font-size: 0.9rem;
+    color: #cbd5f5;
+    margin-bottom: 24px;
+  }
+  
+  /* 表單欄位 */
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #e5e7eb;
+  }
+  
+  .form-input,
+  .form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #4b5563;
+    background: rgba(15, 23, 42, 0.8);
+    color: #f9fafb;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  }
+  
+  .form-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .form-input:focus,
+  .form-select:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+    background: rgba(15, 23, 42, 1);
+  }
+  
+  /* 兩欄排版（註冊用） */
+  .form-row {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* 小提示文字 */
+  .form-hint {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 4px;
+  }
+  
+  /* checkbox 行 */
+  .form-checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #e5e7eb;
+  }
+  
+  .form-checkbox-row input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* 送出按鈕 */
+  .btn-submit {
+    width: 100%;
+    border: none;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #f9fafb;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s, filter 0.1s;
+  }
+  
+  .btn-submit:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 14px 30px rgba(34, 197, 94, 0.35);
+    transform: translateY(-1px);
+  }
+  
+  .btn-submit:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  /* 底部小字 */
+  .register-footer {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+    text-align: center;
+  }
+  
+  .register-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+  
+  .register-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 錯誤文字 */
+  .error-text {
+    display: none;
+    font-size: 0.78rem;
+    color: #f97373;
+    margin-top: 4px;
+  }
+  
+  .show-error {
+    display: block;
+  }
+  
+  /* 手機 RWD */
+  @media (max-width: 600px) {
+    .register-card {
+      padding: 24px 18px;
+      border-radius: 16px;
+    }
+  }
+  
